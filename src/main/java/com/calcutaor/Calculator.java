@@ -1,4 +1,4 @@
-package com.calcutaor.app.calculatordevops;
+package com.calcutaor;
 
 import java.util.Stack;
 
