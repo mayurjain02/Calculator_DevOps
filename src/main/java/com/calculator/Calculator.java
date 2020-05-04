@@ -1,4 +1,4 @@
-package com.calcutaor;
+package com.calculator;
 
 import java.util.Stack;
 
