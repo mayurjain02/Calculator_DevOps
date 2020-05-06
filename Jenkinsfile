@@ -49,7 +49,6 @@ pipeline
             {
                 script
                 {
-		  echo  docker.build registry + ":$BUILD_NUMBER"
                   dockerImage = docker.build registry + ":$BUILD_NUMBER"
                   dockerImageLatest = docker.build registry + ":latest"
                 }
