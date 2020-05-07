@@ -3,7 +3,7 @@ pipeline
     environment
     {
         registry = "mayurj02/calculator"
-        registryCredential = 'docMayur@02'
+        registryCredential = 'dhMayur@02'
         dockerImage = ''
         dockerImageLatest = ''
     }
