@@ -1,3 +1,5 @@
+package com.calculatar;
+
 import com.calculator.Calculator;
 import org.junit.jupiter.api.Test;
 
