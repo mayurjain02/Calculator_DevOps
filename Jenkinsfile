@@ -83,5 +83,21 @@ pipeline
                 sh "java -cp target/calculator.jar com/calculator/Calculator 5+5*7"
             }
         }
+        
+        stage('Deploy') {
+        steps {
+	  logstash{
+            script {
+              step([$class: "RundeckNotifier",
+                  includeRundeckLogs: true,
+                  jobId: "c394f67b-b8dc-4d12-9f3a-2308c431edd3",
+                  rundeckInstance: "Rundeck",
+                  shouldFailTheBuild: true,
+                  shouldWaitForRundeckJob: true,
+                  tailLog: true])
+             }
+           }
+	 }
+       }
     }
 }
